@@ -1,0 +1,724 @@
+console.log("hello!");
+
+// const color = "blue";
+
+// switch (color) {
+//   case "red":
+//     console.log("color is red");
+//     break;
+
+//   case "blue":
+//     console.log("color is blue");
+//     break;
+
+//   default:
+//     console.log("no color");
+//     break;
+// }
+
+// function greet(fName, lName) {
+//   console.log("hello " + fName + " " + lName);
+// }
+
+// greet("brad", "traversy");
+
+// const square = function(x) {
+//   return x * x;
+// };
+
+// console.log(square(8));
+
+// const square = function(x) {
+//   console.log(x * x);
+// };
+
+// square(8);
+
+// //immediately involed function expression
+
+// (function(name1) {
+//   console.log("hello " + name1);
+// })("brad");
+// const todo = {
+//   add: function() {
+//     console.log("add todo...");
+//   },
+
+//   edit: function(id) {
+//     console.log(`edit todo ${id}`);
+//   }
+// };
+
+// todo.edit(22);
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 2) {
+//     console.log("2 is my favorite number");
+//     continue;
+//   }
+
+//   if (i === 5) {
+//     console.log("break the loop");
+//     break;
+//   }
+//   console.log("Number " + i);
+// }
+
+//while loop
+
+// let i = 0;
+// while (i < 10) {
+//   console.log("Number " + i);
+//   i++;
+// }
+
+//const cars = ["ford", "chevy", "honda", "toyota"];
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+
+// cars.forEach(function(xyz) {
+//   console.log(xyz);
+// });
+
+// const users = [
+//   { id: 1, name: "John" },
+//   { id: 2, name: "Sara" },
+//   { id: 3, name: "Karen" }
+// ];
+
+// const ids = users.map(function(user) {
+//   return user.id;
+// });
+
+// console.log(ids);
+// const cars = ["ford", "chevy", "honda", "toyota"];
+
+// cars.forEach(function(car, index, array) {
+//   console.log(`${index} : ${car}`);
+//   console.log(array);
+// });
+
+// const user = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 40
+// };
+
+// for (let x in user) {
+//   console.log(`${x} : ${user[x]}`);
+// }
+
+//alert("hello world");
+
+// prompt
+//const input = prompt();
+//alert(input)
+//if (confirm("are you sure")) {
+// console.log("yes");
+//}
+
+// function greet(fName, lName) {
+//   console.log("hello " + fName + " " + lName);
+// }
+
+// greet("john", "doe");
+
+// function greet(fName = "john", lName = "Doe") {
+//   return "hello " + fName + " " + lName;
+// }
+
+// console.log(greet());
+// const square = function(x) {
+//   return x * x;
+// };
+
+// console.log(square(8));
+
+// const square = function(x = 8) {
+//   return x * x;
+// };
+
+// console.log(square());
+//iife
+// (function(name) {
+//   console.log("Hello " + name);
+// })("Brad");
+
+// const todo = {
+//   add: function() {
+//     console.log("add todo..");
+//   },
+//   edit: function() {
+//     console.log("edit todo..");
+//   }
+// };
+
+// todo.add();
+// todo.edit();
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 2) {
+//     console.log("my favourite number is " + i);
+//     continue;
+//   }
+//   console.log("Number is " + i);
+// }
+
+// let i = 0;
+// while (i < 10) {
+//   console.log("number is " + i);
+//   i++;
+// }
+
+// loop through array
+// const cars = ["ford", "chevy", "honda", "toyota"];
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+
+// cars.forEach(function(car) {
+//   console.log(car);
+// });
+// const users = [
+//   { id: 1, name: "john" },
+//   { id: 2, name: "Sara" },
+//   { id: 3, name: "Karen" }
+// ];
+
+// const ids = users.map(function(user) {
+//   return user.id;
+// });
+
+// console.log(ids);
+// const cars = ["ford", "chevy", "honda", "toyota"];
+
+// cars.forEach(function(car, index, array) {
+//   console.log(`${index}: ${car}`);
+//   console.log(array);
+// });
+// console.log(document.getElementById("task-title"));
+
+// console.log(document.getElementById("task-title").id);
+
+//document.getElementById('task-title').style.background = 'red';
+
+//document.getElementById('task-title').style.color = 'blue';
+
+//document.getElementById("task-title").style.display = "none";
+
+// document.getElementById("task-title").textContent = "Task List";
+// document.getElementById("task-title").innerText = "My Tasks";
+// const taskList = document.getElementById("task-title");
+
+// taskList.innerHTML = '<span style="colore:red">Task List</span>';
+
+// console.log(document.querySelector("#task-title"));
+// console.log(document.querySelector(".card-title"));
+// console.log(document.querySelector("h5"));
+// document.querySelector("li").style.color = "red";
+// document.querySelector("li:last-child").style.color = "blue";
+// document.querySelector("li:nth-child(3)").style.color = "orange";
+// document.querySelector("li:nth-child(4)").textContent = "Hello World";
+
+// document.querySelector("li:nth-child(odd)").style.background = "#ccc";
+
+// document.querySelector("li:nth-child(even)").style.background = "#f4f4f4";
+// const items = document.getElementsByClassName("collection-item");
+
+// console.log(items);
+// console.log(items[0]);
+// items[0].style.color = "red";
+// items[3].textContent = "hello";
+
+// const listItems = document
+//   .querySelector("ul")
+//   .getElementsByClassName("collection-item");
+// console.log(listItems);
+
+// let lis = document.getElementsByTagName("li");
+
+// console.log(lis[0]);
+// lis[0].style.color = "red";
+// lis[3].textContent = "hello";
+
+// // convert html collection into array
+// lis = Array.from(lis);
+
+// lis.forEach(function(li, index) {
+//   console.log(li.className);
+//   li.textContent = `${index} : Hello`;
+// });
+// console.log(lis);
+// const items = document.querySelectorAll("ul.collection li,collection-item");
+// items.forEach(function(item, index) {
+//   item.textContent = `${index} : Hello`;
+// });
+
+// const liOdd = document.querySelectorAll("li:nth-child(odd)");
+// const liEven = document.querySelectorAll("li:nth-child(even");
+
+// liOdd.forEach(function(li, index) {
+//   li.style.background = "#ccc";
+// });
+
+// liEven.forEach(function(li, index) {
+//   li.style.background = "#f4f4f4";
+// });
+
+// console.log(document.getElementById("task-title"));
+// console.log(document.getElementById("task-title"));
+
+// changeing style using javascript
+//document.getElementById("task-title").style.background = "red";
+
+// document.getElementById("task-title").style.color = "blue";
+// document.getElementById("task-title").style.padding = "5px";
+// document.getElementById("task-title").style.display = "none";
+
+// document.getElementById("task-title").textContent = "hello";
+// document.getElementById("task-title").innerText = "my list";
+// document.getElementById("task-title").innerHTML = '<span style="color:red">Task list</span>';
+// console.log(document.querySelector("#task-title"));
+// console.log(document.querySelector(".card-title"));
+// console.log(document.querySelector("h5"));
+
+// document.querySelector("li").style.color = "red";
+// document.querySelector("li:last-child").style.color = "blue";
+// document.querySelector("li:nth-child(3)").style.color = "purple";
+// //document.querySelector("li:nth-child(4)").textContent = "hello";
+
+// document.querySelector("li:nth-child(odd)").style.background = "#ccc";
+// document.querySelector("li:nth-child(even)").style.background = "#f4f4f4";
+
+// const items = document.getElementsByClassName("collection-item");
+
+// console.log(items);
+// console.log(items[2]);
+// items[0].style.background = "red";
+// items[3].style.color = "blue";
+// items[1].style.innerText = "hello";
+// items[1].style.textContent = "hello";
+
+// const items = document
+//   .querySelector("ul")
+//   .getElementsByClassName("collection-item");
+
+// console.log(items);
+
+// let lis = document.getElementsByTagName("li");
+
+// console.log(lis);
+// console.log(lis[0]);
+
+// lis[0].style.color = "red";
+// lis[1].style.color = "green";
+// lis[2].style.color = "orange";
+// lis[3].textContent = "hello";
+
+//convert html collection into Array
+// lis = Array.from(lis);
+// console.log(lis);
+
+// lis.forEach(function(li,index,array){
+//   console.log(li.className);
+//   li.textContent = `${index} : Hello`;
+// });
+// const items = document.querySelectorAll("ul.collection, li.collection-item");
+// console.log(items);
+
+// let item = Array.from(items);
+// console.log(item);
+
+// const liOdd = document.querySelectorAll("li:nth-child(odd)");
+// liOdd.forEach(function(li, index) {
+//   li.style.background = "#ccc";
+// });
+
+// const liEven = document.querySelectorAll("li:nth-child(even)");
+
+// liEven.forEach(function(li, index) {
+//   li.style.background = "#f4f4f4";
+// });
+// let val;
+
+// const list = document.querySelector("ul.collection");
+
+// const listItem = document.querySelector("li.collection-item:first-child");
+
+// val = listItem;
+// val = list;
+// console.log(val);
+
+// const liOdd = document.querySelectorAll("li:nth-child(odd)");
+
+// liOdd.forEach(function(li, index) {
+//   li.style.background = "#ccc";
+// });
+
+// const liEven = document.querySelectorAll("li:nth-child(even)");
+
+// liEven.forEach(function(li) {
+//   li.style.background = "#f4f4f4";
+// });
+// let val;
+
+// const list = document.querySelector("ul.collection");
+// const listItem = document.querySelector("li.collection-item:first-child");
+
+// val = listItem;
+
+// val = list;
+
+// // get child nodes
+
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+// val = list.childNodes[1].nodeName;
+// val = list.childNodes[5].nodeType;
+
+// //get children elements
+
+// val = list.children;
+// val = list.children;
+
+// list.children[1].textContent = "Hello";
+// //children of children
+// list.children[3].children[0].id = "test-link";
+// val = list.children[3].children[0];
+
+// val = list.firstChild;
+// val = list.firstElementChild;
+
+// val = list.lastChild;
+// val = list.lastElementChild;
+
+// val = list.childElementCount;
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
+
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
+// console.log(val);
+// console.log(function() {}.constructor === Function);
+
+// // function greet(fName, lName) {
+// //   console.log("hello " + fName + " " + lName);
+// // }
+
+// // greet("anirudh", "kalaskar");
+
+// function greet(fName = "anirudh", lName = "kalaskar") {
+//   console.log("Hello " + fName, lName);
+// }
+
+// greet();
+
+// const square = function(x = 8) {
+//   return x * x;
+// };
+
+// console.log(square());
+
+// (function(name) {
+//   console.log("Hello " + name);
+// })("Brad");
+
+// const todo = {
+//   add: function() {
+//     console.log("add todo..");
+//   },
+
+//   edit: function() {
+//     console.log("edit todo..");
+//   }
+// };
+
+// todo.add();
+// todo.edit();
+
+// todo.delete = function() {
+//   console.log("delete todo..");
+// };
+// todo.delete();
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 2) {
+//     console.log("2 is my fav");
+//     continue;
+//   }
+//   if (i === 5) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+
+// cars.forEach(function(car) {
+//   console.log(car);
+// });
+
+// const users = [
+//   { id: 1, name: "john" },
+//   { id: 2, name: "Sara" },
+//   { id: 3, name: "Karen" }
+// ];
+
+// const ids = users.map(function(user) {
+//   return user.id;
+// });
+
+// console.log(ids);
+
+// const users = [
+//   { id: 1, name: "john" },
+//   { id: 2, name: "Sara" },
+//   { id: 3, name: "Karen" }
+// ];
+
+// const ids = users.map(function(user) {
+//   return user.id;
+// });
+
+// console.log(ids);
+// const cars = ["ford", "chevy", "honda", "toyota"];
+// cars.forEach(function(car, index, array) {
+//   console.log(`${index} : ${car}`);
+//   console.log(array);
+// });
+
+// for (let x in cars) {
+//   console.log(`${x}:${cars[x]}`);
+// }
+// console.log(document.getElementById("task-title"));
+// document.getElementById("task-title").style.color = "red";
+// document.getElementById("task-title").style.background = "black";
+// document.getElementById("task-title").style.padding = "5px";
+// document.getElementById("task-title").style.display = "none";
+
+// document.getElementById("task-title").innerText = "hello";
+// document.getElementById("task-title").innerHTML = "mello";
+// document.getElementById(
+//   "task-title"
+// ).innerHTML = `<span style='color:red'>Task</span>`;
+
+// console.log(document.querySelector("#task-title"));
+// console.log(document.querySelector(".card-title"));
+// console.log(document.querySelector("h5"));
+
+// document.querySelector("li").style.color = "red";
+// //document.querySelector("li").style.background = "green";
+// document.querySelector("li:nth-child(3)").style.color = "pink";
+// document.querySelector("li:nth-child(4)").style.background = "yellow";
+// document.querySelector("li:last-child").style.color = "orange";
+// document.querySelector("li:nth-child(odd)").style.background = "#ccc";
+// document.querySelector("li:nth-child(even)").style.background = "#f4f4f4";
+// dom selectors for multiple nextElementSibling
+
+// const items = document.getElementsByClassName("collection-item");
+// console.log(items[2]);
+
+// items[0].style.color = "red";
+// items[1].style.color = "green";
+// items[2].style.background = "lightgrey";
+
+// const listItems = document
+//   .querySelector("ul")
+//   .getElementsByClassName("collection-item");
+
+// console.log(listItems);
+
+// let lis = document.getElementsByTagName("li");
+// console.log(lis[4]);
+
+// lis[0].style.color = "red";
+// //lis[1].textContent = "hello";
+
+// lis = Array.from(lis);
+// console.log(lis);
+
+// lis.forEach(function(li) {
+//   console.log(li.className);
+// });
+// const items = document.querySelectorAll("ul.collection li.collection-item");
+
+// const ArrItems = Array.from(items);
+// console.log(ArrItems);
+
+// ArrItems.forEach(function(item, index) {
+//   item.textContent = `${index}:hello`;
+// });
+
+// const liOdd = document.querySelectorAll("li:nth-child(odd)");
+
+// console.log(liOdd);
+// liOdd.forEach(function(li) {
+//   li.style.background = "grey";
+// });
+
+// console.log(liOdd);
+// const liEven = document.querySelectorAll("li:nth-child(even)");
+
+// console.log(liEven);
+// let val;
+
+// const list = document.querySelector("ul.collection");
+
+// const listItem = document.querySelector("li.collection-item:first-child");
+// val = list;
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[3].nodeType;
+// val = list.children;
+// val = list.children[0];
+// list.children[1].textContent = "hello";
+// console.log(val);
+
+// const li = document.createElement("li");
+
+// li.className = "collection-item";
+
+// li.setAttribute("title", "new-item");
+
+// li.appendChild(document.createTextNode("hello world"));
+
+// document.querySelector("ul.collection").appendChild(li);
+
+// const link = document.createElement("a");
+
+// link.className = "delete-item secondary-content";
+
+// link.innerHTML = '<i class= "fa fa-remove"></i>';
+
+// //append link to liEven
+
+// li.appendChild(link);
+// //append li as child to ul
+
+// document.querySelector("ul.collection").appendChild(li);
+
+//replace elements
+
+//create element
+
+// const newHeading = document.createElement("h2");
+
+// // add ids
+// newHeading.id = "task-title";
+
+// //new createTextNode
+
+// newHeading.appendChild(document.createTextNode("Task List"));
+// // get old newHeading
+
+// const oldHeading = document.getElementById("task-title");
+
+// //parent
+
+// const cardAction = document.querySelector(".card-action");
+
+// //replace
+
+// cardAction.replaceChild(newHeading, oldHeading);
+// const list = document.querySelector("ul.collection");
+
+// const listItem = document.querySelector("li.collection-item:first-child");
+
+// val = list;
+// val = list.childNodes;
+// val = list.childNodes[1];
+// val = list.childNodes[2].nodeName;
+// val = list.childNodes[3].nodeType;
+// val = list.children;
+// val = list.children[4];
+// //val = list.children[1].innerHTML = "hello";
+// val = list.firstChild;
+// val = list.firstElementChild;
+// val = list.lastChild;
+// val = list.lastElementChild;
+// val = list.childElementCount;
+
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
+// //get next sibling;
+
+// val = listItem.nextSibling;
+// val = listItem.nextSibling.nextSibling.previousSibling;
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
+// console.log(val);
+
+//const newHeading = document.createElement("h2");
+
+// newHeading.id = "task-title";
+
+//newHeading.appendChild(document.createTextNode("task list"));
+
+//const oldHeading = document.getElementById("task-title");
+
+// //parent
+
+//const cardAction = document.querySelector("div.card-action");
+// //replaceChild
+
+// cardAction.replaceChild(newHeading, oldHeading);
+// console.log(newHeading);
+// const lis = document.querySelectorAll("li");
+// const list = document.querySelector("ul");
+// //remove list item
+
+// lis[0].remove();
+
+// //remove child element
+
+// list.removeChild(lis[3]);
+
+//classes and attributes
+// const firstLi = document.querySelector("li:first-child");
+// const link = firstLi.children[0];
+// link.className;
+// console.log(link.className);
+// console.log(link.classList);
+// link.classList.add("task");
+// console.log(link.classList);
+// link.classList.remove("task");
+// console.log(link.classList);
+// val = link.getAttribute("href");
+// console.log(val);
+// link.setAttribute("href", "http://google.com");
+// console.log(link.hasAttribute("title"));
+// console.log(link);
+
+// document.querySelector("a.clear-tasks").addEventListener("click", function(e) {
+//   console.log("hello world");
+//   e.preventDefault();
+//   let val;
+
+//   val = e;
+//   val = e.target;
+//   val = e.target.className;
+//   val = e.target.classList;
+//   val = e.type;
+//   val = e.timeStamp;
+//   val = e.clientY;
+//   val = e.clientX;
+//   val = e.offsetY;
+//   val = e.offsetX;
+//   console.log(val);
+//   //coordinates
+// });
+// document.querySelector(".clear-tasks").addEventListener("click", onClick);
+
+// function onClick(e) {
+//   console.log("clicked");
+// }
